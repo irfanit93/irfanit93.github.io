@@ -17,7 +17,7 @@ var slidedoom=function(backgrounds,aspectRatioHeight,aspectRatioWidth,slidesgrou
         storeStyles += ".slide" + i + "{margin-left:" + (i * 100) + "%;}"; } 
         slidesStyle = document.createTextNode(storeStyles); 
         addSlidesStyles.appendChild(slidesStyle); 
-        function setBackgroundSlides() { for (var i = 0; i < slides.length; i++) { if (typeof backgrounds[i] == "string") { slides[i].style.background = backgrounds[i]; } else if (typeof backgrounds[i] == "object") { slides[i].style.background = "url('" + backgrounds[i].name + "') 0% 0%/100% 100% no-repeat"; } } } 
+        function setBackgroundSlides() { if(!((slides.length==backgrounds.length) && slides.length==maxSlides)){alert('Check maxSlides variable value, backgrounds array length and total number of slides dom elements are equal');document.write('Check the error');}for (var i = 0; i < slides.length; i++) { if (typeof backgrounds[i] == "string") { slides[i].style.background = backgrounds[i]; } else if (typeof backgrounds[i] == "object") { slides[i].style.background = "url('" + backgrounds[i].name + "') 0% 0%/100% 100% no-repeat"; } } } 
         for (var i = 0; i < containerLength; i++) {
              specificSlidesLength.push(slidescontainer[i].getElementsByClassName("slides").length); 
              slidedoom.push(0); 
