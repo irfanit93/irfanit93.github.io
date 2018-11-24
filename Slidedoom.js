@@ -16,7 +16,7 @@ window.addEventListener('load', function () {
             storeStyles += ".slide" + i + "{margin-left:" + (i * 100) + "%;}"; } 
             slidesStyle = document.createTextNode(storeStyles); 
             addSlidesStyles.appendChild(slidesStyle); 
-            function setBackgroundSlides() { for (var i = 0; i < slides.length; i++) { if (typeof backgrounds[i] == "string") { slides[i].style.background = backgrounds[i]; } else if (typeof backgrounds[i] == "object") { slides[i].style.background = "url(" + backgrounds[i].name + ") 0% 0%/100% 100% no-repeat"; } } } 
+            function setBackgroundSlides() { for (var i = 0; i < slides.length; i++) { if (typeof backgrounds[i] == "string") { slides[i].style.background = backgrounds[i]; } else if (typeof backgrounds[i] == "object") { slides[i].style.background = "url('" + backgrounds[i].name + "') 0% 0%/100% 100% no-repeat"; } } } 
             for (var i = 0; i < containerLength; i++) {
                  specificSlidesLength.push(slidescontainer[i].getElementsByClassName("slides").length); 
                  slidedoom.push(0); 
@@ -117,7 +117,7 @@ window.addEventListener('load', function () {
             headadjust[1].style.marginTop = headadjust[0].scrollHeight + "px";
         }
         adjustHeader();
-        window.onresize = function () {
+        window.addEventListener('resize',function () {
             adjustHeader();
             if (document.documentElement.clientWidth < 900) {
                 for (var i = 0; i < containerLength; i++) {
@@ -133,7 +133,7 @@ window.addEventListener('load', function () {
             }
             recalculate();
             recalculateScrollHeight();
-        }
+        });
     }
     )();
 });;

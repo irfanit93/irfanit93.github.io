@@ -1,0 +1,58 @@
+{
+  "_from": "slidedoom",
+  "_id": "slidedoom@1.0.14",
+  "_inBundle": false,
+  "_integrity": "sha512-7aT8X0ZltZLXc3QO6Am8yUVzkMLuC/TvluYnbuITPlk3qWo6M84SafCyTegJdqAraZ0oGnIHBIXMqpeikDFNHw==",
+  "_location": "/slidedoom",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "slidedoom",
+    "name": "slidedoom",
+    "escapedName": "slidedoom",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/slidedoom/-/slidedoom-1.0.14.tgz",
+  "_shasum": "069d0684345432441fb91984f28b095ac084acf9",
+  "_spec": "slidedoom",
+  "_where": "C:\\Users\\syed junaid\\Desktop\\izzaarchitects\\slidedoom",
+  "author": {
+    "name": "Ahamed Irfan"
+  },
+  "bugs": {
+    "url": "https://github.com/irfanit93/slidedoom/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Cross Browser and Responsive Multiple Slides Library for Modern Web Apps",
+  "homepage": "https://github.com/irfanit93/slidedoom/blob/master/README.md",
+  "keywords": [
+    "carousel",
+    "slides",
+    "responsive",
+    "javascript",
+    "css",
+    "angular",
+    "react",
+    "cross",
+    "browser"
+  ],
+  "license": "ISC",
+  "main": "Slidedoom.min.js",
+  "name": "slidedoom",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irfanit93/slidedoom.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.15"
+}
