@@ -11,12 +11,12 @@
         // If you want to specify background image instead of background color, specify it as
         // object with property name set to the image name along with the extenstion.
         var backgrounds = [
-            "rgba(0,0,0,0.8)",//Slide0 background
-            "#687792",//Slide1 background
-            "#121212",//Slide2 background
+            {name:"002.jpg"},//Slide0 background
+            {name:"003.png"},//Slide1 background
+           {name:"002.jpg"},//Slide2 background
             "#888eee",//Slide3 background
-            "#a77756",//Slide4 background
-            "#444777"//Slide5 background
+            {name:"001.png"},//Slide4 background
+            {name:"002.jpg"}//Slide5 background
         ],
             // Concept: 
             // 1. A single container mentioned by div with css class 'slidecontainer'. There may be many slidecontainers in a single page, each having different number of slides.
@@ -93,9 +93,11 @@
     <div class="slidecontainer">
         <div class="slidezimple">
             <div class="slides slide0">
-                <h3>Slide0</h3>
+                <h3>Slide0 Image Credits: Izza Architects.com</h3>
                 <div class="aboutslidedoom">Slidedoom is a lightweight and ease of use carousel library.Slidedoom is a lightweight and ease of use carousel
                     library.Slidedoom is a lightweight and ease of use carousel library.
+<br/>
+<h1>Izza Architects.com</h1>
                 </div>
             </div>
             <div class="slides slide1">
