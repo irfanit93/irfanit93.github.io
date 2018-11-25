@@ -5,7 +5,7 @@ Visit https://irfanit93.github.io for the implementation. Please update and use 
 
 Recent Update:
 Fixed the small bug in dynamic css created by Slidedoom library and updated read me file. Please read the Readme file if you are having any issues while integrating the library,
-
+Refer https://stackblitz.com/edit/angular-qoelu5 for Integrating Slidedoom with angular cli.
 
 Latest version fix:
 1. Error handling for total no of slides not equal to backgrounds array and maxSlides variable value should be the maximum possible slides div element inside slidezimple css class div element.
