@@ -133,6 +133,7 @@ if you are using custom webpack configuration add the below import code to globa
 #app.component.html
 =================
 (Same as in previous slidedoom version)
+
 <div class="slidecontainer">
   
 <div class="slidezimple">
