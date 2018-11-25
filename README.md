@@ -1,7 +1,14 @@
 # slidedoom
 A responsive slide library for webpages
 Dont forget to add Slidedoom.css. It is needed inorder to display the slides correctly. 
-Visit https://irfanit93.github.io for the implementation
+Visit https://irfanit93.github.io for the implementation. Please update and use the slidedoom package latest version  for bug fix and error handling..
+
+Recent Update:
+Fixed the small bug in dynamic css created by Slidedoom library and updated read me file. Please read the Readme file if you are having any issues while integrating the library,
+
+
+Latest version fix:
+1. Error handling for total no of slides not equal to backgrounds array and maxSlides variable value should be the maximum possible slides div element inside slidezimple css class div element.
 
 Features:
 1. Its Small. 4kb Javascript and 2Kb CSS.
@@ -119,14 +126,16 @@ slidedoom(this.backgrounds, this.aspectRatioHeight, this.aspectRatioWidth, this.
 }
 
 
-app.component.css
+app.component.css // This plays an important role in proper position of slides
 =================
-@import url("slidedoom/Slidedoom.min.css");
+add  "./node_modules/slidedoom/Slidedoom.min.css" to styles array in angular.json file if you are using angular CLI.
+if you are using custom webpack configuration add the below import code to global style sheet
+@import url("../node_modules/slidedoom/Slidedoom.min.css");//the path to the node_modules will vary depend upon where you are placing the import css code of Slidedoom.min.css.
 
 app.component.html
 =================
 (Same as in previous slidedoom version)
-
+/*
 <div class="slidecontainer">
   
 <div class="slidezimple">
@@ -182,5 +191,5 @@ app.component.html
 </div>
 
 <router-outlet></router-outlet>
-
+*/
 Have Fun with it ! :)
