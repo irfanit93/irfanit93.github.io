@@ -37,8 +37,8 @@ Tip:
 If you want some cool glassy effect for your slide add two css classes 'glassy' and 'afterglassy': Do it like below:
 <!--
             <div class="slides slide0">
-                <div class="glassy" style="opacity:0.7"></div><!--set opacity from 0 to 1 to increase or decrease the glassy effect.-->
-                <div class="afterglassy"><!-- this class will make the glassy effect possible -->
+                <div class="glassy" style="opacity:0.7"></div>//set opacity from 0 to 1 to increase or decrease the glassy effect.
+                <div class="afterglassy">//this class will make the glassy effect possible
                     <h3>Slide0</h3>
                     <div class="aboutslidedoom">Slidedoom is a lightweight and ease of use carousel library.Slidedoom is a lightweight and ease of use
                         carousel library.Slidedoom is a lightweight and ease of use carousel library.
