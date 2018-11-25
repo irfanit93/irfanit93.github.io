@@ -35,7 +35,6 @@ For more info, refer Documentation or source code at Github https://github.com/i
 Tip:
 
 If you want some cool glassy effect for your slide add two css classes 'glassy' and 'afterglassy': Do it like below:
-<!--
             <div class="slides slide0">
                 <div class="glassy" style="opacity:0.7"></div>//set opacity from 0 to 1 to increase or decrease the glassy effect.
                 <div class="afterglassy">//this class will make the glassy effect possible
@@ -45,7 +44,6 @@ If you want some cool glassy effect for your slide add two css classes 'glassy' 
                     </div>
                 </div>
             </div>
--->
 Note: Apply a background image to the slide to see the effect visually.
 
 =============================================================================================================
@@ -126,16 +124,15 @@ slidedoom(this.backgrounds, this.aspectRatioHeight, this.aspectRatioWidth, this.
 }
 
 
-app.component.css // This plays an important role in proper position of slides
+# app.component.css // This plays an important role in proper position of slides
 =================
 add  "./node_modules/slidedoom/Slidedoom.min.css" to styles array in angular.json file if you are using angular CLI.
 if you are using custom webpack configuration add the below import code to global style sheet
 @import url("../node_modules/slidedoom/Slidedoom.min.css");//the path to the node_modules will vary depend upon where you are placing the import css code of Slidedoom.min.css.
 
-app.component.html
+#app.component.html
 =================
 (Same as in previous slidedoom version)
-<!--
 <div class="slidecontainer">
   
 <div class="slidezimple">
@@ -191,5 +188,4 @@ app.component.html
 </div>
 
 <router-outlet></router-outlet>
--->
 Have Fun with it ! :)
