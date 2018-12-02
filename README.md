@@ -4,6 +4,12 @@ Dont forget to add Slidedoom.css. It is needed inorder to display the slides cor
 Visit https://irfanit93.github.io for the implementation. Please update and use the slidedoom package latest version  for bug fix and error handling..
 
 Recent Update:
+1.Added error handling for required parameteres for slides.
+2.Added Slidespeed and Fullscreen mode by setting variable var slidespeed=1;//(in seconds) var fullscreendoom=true;//true(For normal web pages) to enable fullscreen icon at bottom  or in angular pass last two parameters for slidedoom function slidedoom(<other required params),slidespeed,fullscreendoom); 
+
+Future Updates:
+1.Decreasing the size of the js file as less as possible.(Busy with some other works. Will be updating it once i have free time. :>3) 
+Previous Update:
 Fixed the small bug in dynamic css created by Slidedoom library and updated read me file. Please read the Readme file if you are having any issues while integrating the library,
 Refer https://stackblitz.com/edit/angular-qoelu5 for Integrating Slidedoom with angular cli.
 

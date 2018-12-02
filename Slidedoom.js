@@ -1,5 +1,7 @@
-window.addEventListener('load', function () {
+window.addEventListener('load',
     (function () {
+try
+{
         var slidezimple = document.getElementsByClassName("slidezimple");
         var newStyle=document.createElement('style');
         document.getElementsByTagName('head')[0].appendChild(newStyle);
@@ -8,6 +10,39 @@ window.addEventListener('load', function () {
         var slidescontainer = document.getElementsByClassName("slidecontainer"),slides = document.getElementsByClassName("slides"),specificSlidesLength = []; 
          var leftarrow = document.getElementsByClassName("leftarrow"),rightarrow = document.getElementsByClassName("rightarrow");
            var containerLength = slidescontainer.length, togglepos = []; 
+	   var fsele='<div style="position:absolute;height:24px;width:24px;bottom:10px;right:10px;" class="fsele">'+
+'<div style="position:absolute;top:0px;left:0px;height:6px;width:6px;border-left:3px solid white;border-top:3px solid white;float:left;color:white;">'+
+'</div>'+
+'<div style="top:0px;right:0px;position:absolute;height:6px;width:6px;border-right:3px solid white;border-top:3px solid white;float:right;">'+
+'</div>'+
+'<div style="bottom:0px;left:0px;position:absolute;height:6px;width:6px;border-left:3px solid white;border-bottom:3px solid white;float:left;margin-top:30px;">'+
+'</div>'+
+'<div style="bottom:0px;right:0px;position:absolute;height:6px;width:6px;border-right:3px solid white;border-bottom:3px solid white;float:right;margin-top:30px;">'+
+'</div>'+
+'</div>';
+function openFullscreen(elem) {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+/* Close fullscreen */
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) { /* Firefox */
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE/Edge */
+    document.msExitFullscreen();
+  }
+}
            if (document.documentElement.clientWidth < 900) {
             aspectRatioHeight = []; aspectRatioWidth = []; slidesgroup = [];
             for(var i=0;i<slidescontainer.length;i++)
@@ -23,6 +58,20 @@ window.addEventListener('load', function () {
                  specificSlidesLength.push(slidescontainer[i].getElementsByClassName("slides").length); 
                  slidedoom.push(0); 
                  togglepos.push(0); 
+		 if(fullscreendoom && fullscreendoom==true)
+{		slidescontainer[i].innerHTML=slidescontainer[i].innerHTML+fsele;
+(function(){
+var togglefs=true;
+var sdcontainer=slidescontainer[i];
+		document.getElementsByClassName("fsele")[i].addEventListener('click',function(){
+	if(togglefs)
+openFullscreen(sdcontainer);
+else
+closeFullscreen();
+togglefs=!togglefs;
+});
+})();
+}
                 } 
                 function recalculate() {
                      for (var i = 0; i < containerLength; i++) {
@@ -64,13 +113,13 @@ window.addEventListener('load', function () {
                             togglepos[containerindex] -= 100;
                     }
                     containerid.style.webkitTransform = "translate(" + togglepos[containerindex] + "%)";
-                    containerid.style.webkitTransitionDuration = "0.3s";
+                    containerid.style.webkitTransitionDuration = slidespeed+"s";
                     containerid.style.webkitTransitionTimingFunction = "linear";
                     containerid.style.oTransform = "translate(" + togglepos[containerindex] + "%)";
-                    containerid.style.oTransitionDuration = "0.3s";
+                    containerid.style.oTransitionDuration = slidespeed+"s";
                     containerid.style.oTransitionTimingFunction = "linear";
                     containerid.style.transform = "translate(" + togglepos[containerindex] + "%)";
-                    containerid.style.transitionDuration = "0.3s";
+                    containerid.style.transitionDuration = slidespeed+"s";
                     containerid.style.transitionTimingFunction = "linear";
                     return togglepos;
                 }
@@ -103,13 +152,13 @@ window.addEventListener('load', function () {
             }
             for (var i = 0; i < slidezimple.length; i++) {
                 slidezimple[i].style.webkitTransform = "translate(" + slidedoom[i] + "%)";
-                slidezimple[i].style.webkitTransitionDuration = "0.3s";
+                slidezimple[i].style.webkitTransitionDuration = slidespeed+"s";
                 slidezimple[i].style.webkitTransitionTimingFunction = "linear";
                 slidezimple[i].style.oTransform = "translate(" + (slidedoom[i]) + "%)";
-                slidezimple[i].style.oTransitionDuration = "0.3s";
+                slidezimple[i].style.oTransitionDuration = slidespeed+"s";
                 slidezimple[i].style.oTransitionTimingFunction = "linear";
                 slidezimple[i].style.transform = "translate(" + (slidedoom[i]) + "%)";
-                slidezimple[i].style.transitionDuration = "0.3s";
+                slidezimple[i].style.transitionDuration = slidespeed+"s";
                 slidezimple[i].style.transitionTimingFunction = "linear";
             }
         }, 3000);
@@ -137,5 +186,8 @@ window.addEventListener('load', function () {
             recalculateScrollHeight();
         });
     }
-    )();
-});;
+catch(err)
+{
+console.log('Kindly check the required parameters for the slide',err);
+}
+  }  ));
