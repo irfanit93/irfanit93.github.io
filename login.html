@@ -1,138 +1,199 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<!--
-<link rel="stylesheet/less" type="text/css" href="sample.less" />
-<script src="less.js" type="text/javascript"></script>
-<script src="jquery-3.5.1.min.js"></script>
--->
-<style>
-body{
-border: 1px solid #fff;
-margin: 0;
-}
-*{
-box-sizing: border-box;
-}
-html,body{
-height: 100%;
-}
-.text-center{
-text-align: center;
-}
-.heading{
-color: #35bb35;
-}
-.disp-block{
-display: block;
-}
-.m-top-30px{
-margin-top: 30px;
-}
-.form-field{
-height: 45px;
-width: 280px;
-padding: 10px;
-border-radius: 5px;
-border: 1px solid #cfcbcb;
-outline: none;
-font-size: 14px;
-}
-.sign-in{
-height: 40px;
-width: 150px;
-background-color: #ea4c4c;;
-color: #fff;
-border-radius: 5px;
-border: none;
-}
-main{
-width: 320px;
-padding: 20px;
-margin: 0 auto;
-margin-top: 30px;
-box-shadow: 1px 1px 6px #aaa;
-}
-h1{
+<html><head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--
+    <link rel="stylesheet/less" type="text/css" href="sample.less" />
+    <script src="less.js" type="text/javascript"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    -->
+    <style>
+    body{
+    border: 1px solid #fff;
     margin: 0;
-}
-.banners{
-    width: 50%;
+    }
+    *{
+    box-sizing: border-box;
+    }
+    html,body{
+    height: 100%;
+    }
+    .text-center{
+    text-align: center;
+    }
+    .heading{
+    color: #35bb35;
+    }
+    .disp-block{
+    display: block;
+    }
+    .m-top-30px{
+    margin-top: 17px;
+    }
+    .form-field{
+    height: 35px;
+    width: 198px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cfcbcb;
+    outline: none;
+    font-size: 12px;
+    }
+    .sign-in{
+    height: 30px;
+    width: 86px;
+    background-color: #ea4c4c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    }
+    main{
+    width: 308px;
+    padding: 29px;
+    margin: 0 auto;
     margin-top: 30px;
-    float: left;
-    padding: 20px;
-}
-.inner-banner{
-    padding: 20px;
-    border: 1px solid rgb(163, 159, 159);
-    min-height: 250px;
-    background: url('pa.jpg') 0% 0%/100% 100%;
-}
-
-@media(max-width:500px){
+    box-shadow: 1px 1px 6px #aaa;
+    }
+    h1,h2{
+        margin: 0;
+    }
+    h2{
+        padding: 20px;
+        padding-left: 0;
+    }
     .banners{
-    width: 100%;
-}
-}
-@media(min-width:700px) and (max-width:1400px){
-    .banners{
-    width: 33.33333333%;
-}
-}
-@media(min-width:1400px){
-    .banners{
-    width: 25%;
-}
-}
-
-</style>
-
-</head>
-<body>
+        width: 20%;
+        margin-top: 30px;
+        float: left;
+        padding: 20px;
+    }
+    .banner-box{
+        border: 1px solid #000;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+    .inner-banner{
+        padding: 20px;
+        min-height: 100px;
+        background: url('pa.jpg') 0% 0%/100% 100%;
+    }
+    
+    @media(max-width:325px){
+        .banners{
+        width: 100%;
+    }
+    }
+    @media(min-width:325px) and (max-width:650px){
+        .banners{
+        width: 50%;
+    }
+    }
+    @media(min-width:650px) and (max-width:720px){
+        .banners{
+        width: 33.333333333%;
+    }
+    }
+    @media(min-width:720px) and (max-width:1024px){
+        .banners{
+        width: 25%;
+    }
+    }
+    .page-heading{
+        text-align: center;
+        margin-top: 30px;
+        color: #2f2c2c;
+        font-size: 28px;
+        font-family: monospace;
+    }
+    .top-stories{
+            margin: 20px;
+            margin-bottom: -26px;
+            color: #2f2c2c;
+            font-size: 28px;
+            font-family: monospace;
+    }
+    </style>
+    
+    </head>
+    <body>
+        <h1 class="page-heading">Stand Up For the Oppressed</h1>
+    
     <main class="text-center">
-        <h1 class="heading"><img src="palestine.png" style="
-    height: 22px;
-    width: 46px;
-"><span> Jus</span><span style="
-    color: #ea4c4c;
-">Pal</span></h1>
-        <div class="m-top-30px">
-        <input class="form-field" type="text" name="uname" placeholder="Username">
-        </div>
-        <div class="m-top-30px">
-        <input class="form-field" type="password" name="pwd" placeholder="Password">
-        </div>
-        <div class="m-top-30px">
-            <button type="button" class="sign-in">Sign In</button>
-        </div>
-        </main>
-<div style="overflow: auto;">
-<div class="banners">
-<div class="inner-banner"></div>
-<h2>Is this not Apartheid?</h2>
-</div>
-<div class="banners">
-    <div class="inner-banner"></div>
-    <h2>Is this not Apartheid?</h2>
-</div>
-<div class="banners">
-    <div class="inner-banner"></div>
-    <h2>Is this not Apartheid?</h2>
-</div>
-<div class="banners">
-    <div class="inner-banner"></div>
-    <h2>Is this not Apartheid?</h2>
-</div>
-<div class="banners">
-    <div class="inner-banner"></div>
-    <h2>Is this not Apartheid?</h2>
-</div>
-<div class="banners">
-    <div class="inner-banner"></div>
-    <h2>Is this not Apartheid?</h2>
-</div>
-</div>
+        <div style="margin-bottom: 13px;">
+                <button type="button" class="sign-in" style="width: 169px;" onclick="location.href='./create-an-account.html'">Create an Account</button>
+            </div>
 
-</body>
-</html>
+<div>
+OR
+</div>
+            <h1 class="heading"><img src="palestine.png" style="height: 22px;width: 46px;"><span> Jus</span><span style="color: #ea4c4c;">Pal</span></h1>
+            <div class="m-top-30px">
+            <input class="form-field" type="text" name="uname" placeholder="Username">
+            </div>
+            <div class="m-top-30px">
+            <input class="form-field" type="password" name="pwd" placeholder="Password">
+            </div>
+            <div class="m-top-30px">
+                <button type="button" class="sign-in">Sign In</button>
+            </div>
+            </main>
+            <h1 class="top-stories">Top Stories <span>★</span></h1>
+    <div style="overflow: auto;">
+        <a href="https://www.aljazeera.com">
+        <div class="banners">
+            <div class="banner-box">
+            <div class="inner-banner"></div>
+            <h2>Is this not Apartheid?</h2>
+        </div>
+        </div>
+        </a>
+        <a href="https://www.aljazeera.com">
+            <div class="banners">
+                <div class="banner-box">
+                <div class="inner-banner"></div>
+                <h2>Is this not Apartheid?</h2>
+            </div>
+            </div>
+            </a>
+            <a href="https://www.aljazeera.com">
+                <div class="banners">
+                    <div class="banner-box">
+                    <div class="inner-banner"></div>
+                    <h2>Is this not Apartheid?</h2>
+                </div>
+                </div>
+                </a>
+                <a  href="https://www.aljazeera.com">
+                    <div class="banners">
+                        <div class="banner-box">
+                        <div class="inner-banner"></div>
+                        <h2>Is this not Apartheid?</h2>
+                    </div>
+                    </div>
+                    </a>
+                    <a href="https://www.aljazeera.com">
+                        <div class="banners">
+                            <div class="banner-box">
+                            <div class="inner-banner"></div>
+                            <h2>Is this not Apartheid?</h2>
+                        </div>
+                        </div>
+                        </a>
+                        <a href="https://www.aljazeera.com">
+                            <div class="banners">
+                                <div class="banner-box">
+                                <div class="inner-banner"></div>
+                                <h2>Is this not Apartheid?</h2>
+                            </div>
+                            </div>
+                            </a>
+                            <a href="https://www.aljazeera.com">
+                                <div class="banners">
+                                    <div class="banner-box">
+                                    <div class="inner-banner"></div>
+                                    <h2>Is this not Apartheid?</h2>
+                                </div>
+                                </div>
+                                </a>
+    
+    </div>
+    </body></html>
