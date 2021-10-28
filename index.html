@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+var fullscreendoom=true;//For full screen
+var slidespeed=1;//For controlling slide speed in seconds can be 0.3,0.4,1,2 etc.,
+        var backgrounds = [
+            {name:"https://www.izzaarchitects.com/img/Main%20page%20projects/modular%20kitchen%20chennai.jpg"},//Slide0 background
+            "#687792",//Slide1 background
+            "#121212",//Slide2 background
+            "#888eee",//Slide3 background
+            "#a77756",//Slide4 background
+            {name:"https://www.izzaarchitects.com/img/Main%20page%20projects/top%2010%20architects%20in%20chennai.jpg"},//Slide5 background
+            {name:"001.png"},//Slide6 background
+            {name:"003.png"},//Slide7 background
+            { name: "002.jpg" },//Slide8 background
+            "#aa5623",//Slide9 background
+            { name: "002.jpg" },//Slide10 background
+            { name: "003.png" },//Slide11 background
+            "#445566",//Slide12 background
+            "#a5a5a5",//Slide13 background
+            "#786856",//Slide14 background
+            { name: "003.png" },//Slide15 background
+            "#222222",//Slide16 background
+            {name:"001.png"}//Slide17 background
+        ], aspectRatioHeight = [2, 2, 2, 2, 2], aspectRatioWidth = [1, 2, 2, 1, 1], slidesgroup = [1, 2, 1, 1], maxSlides = 5;
+    </script>
+    <style>
+        .aboutslidedoom {
+            text-align: center;
+            padding: 3%;
+            font-size: 120%;
+        }
+    </style>
+    <link href="Slidedoom.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div style="background:#231562;padding:1%;font-size:20px;color:white;text-align:center;font-style:italic;position:fixed;width:100%;z-index:1001;top:0px;"
+        class="headadjust">
+        <span style="float:left;top:40%;position:absolute;line-height:10px;left:1px;">
+            Menu
+        </span>
+        <h1>Slidedoom <span>Image Credits: Izza Architects</span></h1>
+    </div>
+    <div class="headadjust" style="background:url('https://www.izzaarchitects.com/img/Main%20page%20projects/interior%20designers%20in%20chennai.jpg') 0% 0%/100% 100% no-repeat;padding:10%;font-size:30px;color:white;text-align:center;clear:right;clear:left;">
+        Slidedoom is a lightweight and ease of use carousel library. Simple Implementaion. Visit
+        <a href="https://irfanit93.github.io/slidedoom_implementationv2.html" style="color:lime;">Slidedoom Simple Implementation</a>
+    </div>
+    <div class="slidecontainer">
+        <div class="leftarrow">
+            <span style="display:inline-block;">&lt;&lt;</span>
+        </div>
+        <div class="slidezimple">
+            <div class="slides slide0">
+                <h3>Slide0</h3>
+                <div class="aboutslidedoom">Slidedoom is a lightweight and ease of use carousel library. Background Images are from Izza Architects and Interior Designers Visit <a href="http://izzaarchitects.com" style="color:lime;">izzaarchitects.com</a></div>
+            </div>
+            <div class="slides slide1">
+                <div class="glassy">
+
+                </div>
+                <div class="afterglassy">
+                    <h3>Slide1 Izza Architects</h3>
+                    <div class="aboutslidedoom">
+                        <img src="tree1.jpg" style="height:25%;width:25%;" />
+                    </div>
+                    <div class="aboutslidedoom">
+                        Image Sliders, Text Sliders, Gallery, can be made using slidedoom 
+			Visit <a href="http://izzaarchitects.com" style="color:lime;">izzaarchitects.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slides slide2">
+                <div class="glassy">
+
+                </div>
+                <div class="afterglassy">
+                    <h3>Slide2</h3>
+                    <div class="aboutslidedoom">
+                        Image Sliders, Text Sliders, Gallery, can be made using slidedoom
+		Visit <a href="http://izzaarchitects.com" style="color:lime;">izzaarchitects.com</a>
+                    </div>
+                    <div class="aboutslidedoom">
+                        <img src="tree0.jpg" style="height:25%;width:25%;" />
+                    </div>
+                </div>
+            </div>
+            <div class="slides slide3">
+                <div class="glassy">
+
+                </div>
+                <div class="afterglassy">
+                    <h3>Slide3</h3>
+                    <div class="aboutslidedoom">
+                        <img src="tree2.jpg" style="height:25%;width:25%;" />
+                    </div>
+                    <div class="aboutslidedoom">
+                        Image Sliders, Text Sliders, Gallery, can be made using slidedoom
+Visit <a href="http://izzaarchitects.com" style="color:lime;">izzaarchitects.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slides slide4">
+                <h3>Slide4</h3>
+            </div>
+        </div>
+        <div class="rightarrow">
+            <span style="display:inline-block;">&gt;&gt;</span>
+        </div>
+    </div>
+    <div class="slidecontainer">
+        <div class="leftarrow">
+            <span style="display:inline-block;">&lt;&lt;</span>
+        </div>
+        <div class="slidezimple">
+            <div class="slides slide0">
+                <h3>Slide5 Izza Architects</h3>
+            </div>
+            <div class="slides slide1">
+                <h3>Slide6</h3>
+                <div class="aboutslidedoom">
+                    Slidedoom is a lightweight and ease of use carousel library.Slidedoom is a lightweight and ease of use carousel library.Slidedoom
+                    is a lightweight and ease of use carousel library.
+Visit <a href="http://izzaarchitects.com" style="color:lime;">izzaarchitects.com</a>
+                </div>
+            </div>
+            <div class="slides slide2">
+                <h3>Slide7</h3>
+            </div>
+        </div>
+        <div class="rightarrow">
+            <span style="display:inline-block;">&gt;&gt;</span>
+        </div>
+    </div>
+    <div class="slidecontainer">
+        <div class="leftarrow">
+            <span style="display:inline-block;">&lt;&lt;</span>
+        </div>
+        <div class="slidezimple">
+            <div class="slides slide0">
+                <h3>Slide8</h3>
+            </div>
+            <div class="slides slide1">
+                <h3>Slide9</h3>
+                <div class="aboutslidedoom">
+                    Cross Browsers Support tOO
+                </div>
+            </div>
+            <div class="slides slide2">
+                <div class="glassy">
+
+                </div>
+                <div class="afterglassy">
+                    <h3>Slide10</h3>
+                    <div class="aboutslidedoom">Slidedoom is a lightweight and ease of use carousel library.Slidedoom is a lightweight and ease of use
+                        carousel library.Slidedoom is a lightweight and ease of use carousel library.
+                    </div>
+                    <div class="aboutslidedoom">
+                        <img src="tree2.jpg" style="height:50%;width:50%;" />
+                    </div>
+                </div>
+            </div>
+            <div class="slides slide3">
+                <div class="glassy">
+
+                </div>
+                <div class="afterglassy">
+                    <h3>Slide11</h3>
+                </div>
+            </div>
+        </div>
+        <div class="rightarrow">
+            <span style="display:inline-block;">&gt;&gt;</span>
+        </div>
+    </div>
+    <div class="slidecontainer">
+        <div class="leftarrow">
+            <span style="display:inline-block;">&lt;&lt;</span>
+        </div>
+        <div class="slidezimple">
+            <div class="slides slide0">
+                <h3>Slide12</h3>
+                <div class="aboutslidedoom">
+                    Mobile,Desktop,Tablet and Whatever Its fully responsive.
+                </div>
+            </div>
+            <div class="slides slide1">
+                <h3>Slide13</h3>
+            </div>
+            <div class="slides slide2">
+                <h3>Slide14</h3>
+            </div>
+        </div>
+        <div class="rightarrow">
+            <span style="display:inline-block;">&gt;&gt;</span>
+        </div>
+    </div>
+    <div class="slidecontainer">
+        <div class="leftarrow">
+            <span style="display:inline-block;">&lt;&lt;</span>
+        </div>
+        <div class="slidezimple">
+            <div class="slides slide0">
+                <div class="aboutslidedoom" style="color:black !important;">
+                    Slide15 Slidedoom is a lightweight and ease of use carousel library.Slidedoom is a lightweight and ease of use carousel library.Slidedoom
+                    is a lightweight and ease of use carousel library.Slidedoom is a lightweight and ease of use carousel
+                    library.Slidedoom is a lightweight and ease of use carousel library.
+                </div>
+            </div>
+            <div class="slides slide1">
+                <div class="aboutslidedoom">
+                    Slide16 Integrate easy with autosliding.
+                </div>
+            </div>
+            <div class="slides slide2">
+                <div class="aboutslidedoom">
+                    Slide17 Multiple Slide feature is available and Its responsive.
+                </div>
+            </div>
+        </div>
+        <div class="rightarrow">
+            <span style="display:inline-block;">&gt;&gt;</span>
+        </div>
+    </div>
+    <div class="aboutslidedoom" style="background:#377ee0;padding:10%;font-size:30px;color:white;text-align:center;clear:left;">
+        Slidedoom is a lightweight and ease of use carousel library.Slidedoom is a lightweight and ease of use carousel library.Slidedoom
+        is a lightweight and ease of use carousel library.Slidedoom is a lightweight and ease of use carousel library.
+Visit <a href="http://izzaarchitects.com" style="color:lime;">izzaarchitects.com</a>
+    </div>
+    <script src="Slidedoom.min.js"></script>
+</body>
+
+</html>
