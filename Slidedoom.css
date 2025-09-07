@@ -44,10 +44,10 @@ body {
     position: absolute;
     right: 10px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 13px;
     z-index: 1000;
     top: 45%;
-    color: white;
+    color: #ff0f92;
     opacity: 0.4;
     transform: scale(1.5, 8);
 }
@@ -56,16 +56,16 @@ body {
     position: absolute;
     left: 10px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 13px;
     z-index: 1000;
     top: 45%;
-    color: white;
+    color: #ff0f92;
     opacity: 0.4;
     transform: scale(1.5, 8);
 }
 
 .leftarrow:hover, .rightarrow:hover {
-    color: white;
+    color: #ff0f92;
     opacity: 1;
     cursor: pointer;
 }
